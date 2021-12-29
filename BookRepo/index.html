@@ -1,0 +1,41 @@
+<html>
+    <head>
+        <link rel="stylesheet" href="mystyle.css">
+        <script src="script.js" defer></script>
+    </head>
+    <body>
+
+    <button data-modal-target="#modal" class='addmygtuk'>Ideti Knyga</button>
+  <div class="modal" id="modal">
+    <div class="modal-header">
+      <div class="title">Pridek knyga i sarasa</div>
+      <button data-close-button class="close-button">&times;</button>
+    </div>
+    <div class="modal-body">
+        <div class='container'>
+            <div class='row'>
+                <div class='col-12'>
+                    <div class='input-group'>
+                        <p>pavadinimas
+                        <br><input type='text' class='form-control' id='name'></br>
+                        autorius
+                        <br><input type='text' class='form-control' id='author'></br>
+                        puslapiai
+                        <br><input type='text' class='form-control' id='page'></br>
+                        ar perskaityta
+                        <br><input type='text' class='form-control' id='read'></br>
+                        </p>
+                        <div class='input-group-append'>
+                            <button onclick="addItem()" class='btn btn-add' type='button'>Add Book</button>
+                            <button onclick="removeItem()" class='btn btn-remove' type='button'>Remove Book</button>
+                        </div>
+                    </div>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+  </div>
+  <div id="overlay"></div>
+  <ul id='dynamic-list'></ul>
+</html>

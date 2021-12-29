@@ -1,0 +1,26 @@
+.container {
+    display: flex;
+  }
+
+.content {
+    border: 1px solid black;
+    height: 25px;
+    width: 25px;
+    /* flex: 1; */
+}
+
+.linija {
+    display: flex;
+    justify-content: center;
+}
+
+
+.buttonContainer {
+    display: flex;
+    margin-top: 25px;
+    justify-content: center;
+}
+
+.button {
+    margin-right: 20px;
+}
